@@ -11,7 +11,11 @@ public class Main {
 //        System.out.println(people.getAge());
         /// ——————————————————————————————————————
         Circle circle = new Circle();
-        circle.setRadius(60);
+        try {
+            circle.setRadius(0);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
         people.drawCircle(circle);
     }
 }

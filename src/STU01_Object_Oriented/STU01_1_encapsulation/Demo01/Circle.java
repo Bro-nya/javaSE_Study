@@ -7,8 +7,13 @@ public class Circle {
         return radius;
     }
 
-    public void setRadius(Integer radius) {
-        this.radius = radius;
+    public void setRadius(Integer radius) throws Exception {
+        if(radius > 0) {
+            this.radius = radius;
+        }else{
+//            System.out.println("请输入正确的半径数值");
+            throw new Exception("请输入正确的的半径数值");
+        }
     }
 
     public void draw() {
