@@ -1,4 +1,4 @@
-package STU01_Object_Oriented.STU01_1_encapsulation.Demo01;
+package STU01_面向对象.STU01_1_封装.Demo01;
 
 public class Main {
     public static void main(String[] args) {

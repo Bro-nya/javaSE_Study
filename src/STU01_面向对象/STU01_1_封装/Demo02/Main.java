@@ -1,6 +1,4 @@
-package STU01_Object_Oriented.STU01_1_encapsulation.Demo02;
-
-import sun.awt.geom.AreaOp;
+package STU01_面向对象.STU01_1_封装.Demo02;
 
 import java.util.Scanner;
 
