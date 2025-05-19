@@ -2,7 +2,7 @@ package STU01_面向对象.STU01_1_封装.Demo02;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);///创建Scanner对象，用于读取用户输入
         String[] names={"jack","tony","rose"};

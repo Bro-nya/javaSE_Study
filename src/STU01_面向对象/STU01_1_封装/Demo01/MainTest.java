@@ -1,6 +1,6 @@
 package STU01_面向对象.STU01_1_封装.Demo01;
 
-public class Main {
+public class MainTest {
     public static void main(String[] args) {
         People people = new People();
 

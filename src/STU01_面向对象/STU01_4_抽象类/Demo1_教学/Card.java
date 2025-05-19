@@ -1,4 +1,4 @@
-package STU01_面向对象.STU01_4_抽象类;
+package STU01_面向对象.STU01_4_抽象类.Demo1_教学;
 
 public abstract class Card {
     private String username;
@@ -17,14 +17,15 @@ public abstract class Card {
         this.balance = balance;
     }
 
-    public abstract double pay(double money);
+    ///构造器，无参有参都写上
+    public Card() {
+    }
 
     public Card(String username, Double balance) {
-        username="bronya";
-        balance=5000.0;
         this.username = username;
         this.balance = balance;
     }
 
+    /// 这个类不知道要打几折，所有定义一个抽象方法比较好
+    public abstract void pay(Double money);
 }
-

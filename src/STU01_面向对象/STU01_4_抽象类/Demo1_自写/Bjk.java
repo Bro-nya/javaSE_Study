@@ -1,7 +1,7 @@
-package STU01_面向对象.STU01_4_抽象类;
+package STU01_面向对象.STU01_4_抽象类.Demo1_自写;
 
-public class bjk extends Card{
-    public bjk(String username, Double balance) {
+public class Bjk extends Card{
+    public Bjk(String username, Double balance) {
         super(username, balance);
     }
 
