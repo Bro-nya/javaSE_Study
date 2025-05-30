@@ -4,5 +4,6 @@ public class MainTest {
     public static void main(String[] args) {
         UsbFan usbFan = new UsbFan();
         usbFan.serviceForUsb2();
+        usbFan.serviceForUsb3();
     }
 }
