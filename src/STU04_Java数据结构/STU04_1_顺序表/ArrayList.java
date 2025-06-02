@@ -27,12 +27,19 @@ public class ArrayList<E> {   //泛型E，因为表中要存的具体数据类�
     @SuppressWarnings("unchecked")//屏蔽未经检查警告
     public E remove(int index){
         if (index < 0 || index >= size)
-            throw new IndexOutOfBoundsException("删除位置非法，合法的插入位置为：0 ~ "+(size - 1));
+            throw new IndexOutOfBoundsException("删除位置非法，合法的删除位置为：0 ~ "+(size - 1));
         E e = (E) array[index];
         for (int i = index; i < size; i++)
             array[i] = array[i + 1];
         size--;
         return e;
+    }
+
+    @SuppressWarnings("unchecked")
+    public E get(int index){//查找
+        if (index < 0 || index >= size)
+            throw new IndexOutOfBoundsException("查找位置非法，合法的查找位置为：0 ~ "+(size - 1));
+        return (E) array[index];
     }
 
 
