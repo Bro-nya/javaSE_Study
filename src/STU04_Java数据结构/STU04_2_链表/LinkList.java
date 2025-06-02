@@ -13,7 +13,7 @@ public class LinkList<E> {
         }
     }
 
-    public void add(E element, int index) {
+    public void add(E element, int index) {//链表内容增加
         Node<E> prev =head;
         for (int i = 0; i < index; i++) {
             prev = prev.next;
@@ -25,6 +25,18 @@ public class LinkList<E> {
         prev.next = newNode;
         size++;
         System.out.println("插入完成");
+    }
+
+    public void remove(int index) {//链表内容删除
+        Node<E> prev =head;
+        for (int i = 0; i < index; i++) {
+            prev = prev.next;
+            System.out.println(i);
+        }
+        System.out.println("该检索节点链接的下一个节点为"+prev.next);
+        prev.next= prev.next.next;
+        size--;
+        System.out.println("删除完成");
     }
 
     @Override

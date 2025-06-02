@@ -7,5 +7,8 @@ public class MainTest {
         list.add("20", 0);
         list.add("30", 1);
         System.out.println(list);
+        list.remove( 2);
+        System.out.println(list);
+
     }
 }
