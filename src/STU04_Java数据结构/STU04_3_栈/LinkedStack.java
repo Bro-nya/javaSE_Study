@@ -5,6 +5,9 @@ import java.util.NoSuchElementException;
 public class LinkedStack<E> {
     private final Node<E> head=new Node<>(null);
 
+    public LinkedStack() {///无参构造
+    }
+
     public void push(E e) {
         Node<E> newNode=new Node<>(e);
         newNode.next=head.next;
