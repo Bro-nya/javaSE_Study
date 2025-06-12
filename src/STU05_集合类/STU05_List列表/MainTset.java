@@ -7,7 +7,7 @@ import java.util.List;
 
 public class MainTset {
     public static void main(String[] args) {
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         List<String> list1=new LinkedList<>(Arrays.asList("a","b","c"));
         list.add("AAAA");
         for (String s : list1) {
