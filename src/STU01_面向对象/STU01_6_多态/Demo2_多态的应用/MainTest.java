@@ -1,6 +1,5 @@
 package STU01_面向对象.STU01_6_多态.Demo2_多态的应用;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
 
 public class MainTest {
     public static void main(String[] args) {

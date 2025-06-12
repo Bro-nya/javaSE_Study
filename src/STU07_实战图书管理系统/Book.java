@@ -9,6 +9,18 @@ public class Book implements Serializable {
     private int price;
 
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
     private Book(String title, String author, int price) {//构造函数
         this.title = title;
         this.author = author;

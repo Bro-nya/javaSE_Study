@@ -1,7 +1,5 @@
 package STU06_JAVAIO.STU06_6_转换流;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
 import java.io.*;
 
 public class Main {

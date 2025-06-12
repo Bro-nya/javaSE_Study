@@ -27,6 +27,12 @@ public class Main {
                 case 2:
                     list();
                     break;
+                case 3:
+                    delete(sc);
+                    break;
+                case 4:
+                    modify(sc);
+                    break;
                 case 5:
                     System.out.println("正在保存");
                     save();
@@ -36,8 +42,41 @@ public class Main {
 
         }
     }
-    private static void delete(){
+    private static void modify(Scanner sc) {
+        sc.nextLine();
+        System.out.println("请选择要修改的位置");
+        int index = sc.nextInt();
+        sc.nextLine();
+        while(index>LIST.size()-1||index<0){
+            System.out.println("不存在,重输");
+            index=sc.nextInt();
+            sc.nextLine();
+        }
 
+        Book book = LIST.get(index);
+        System.out.print("请输入书名(必填，2-100字符)：");
+        book.setTitle(sc.nextLine());
+        System.out.print("请输入作者(必填，2-50字符)：");
+        book.setAuthor(sc.nextLine());
+        System.out.print("请输入价格(正整数，单位：元)：");
+        book.setPrice(sc.nextInt());
+        sc.nextLine();
+        System.out.println("修改完成");
+
+    }
+
+    private static void delete(Scanner sc){
+        sc.nextLine();
+        System.out.println("输入要删除的序号");
+        int index=sc.nextInt();
+        sc.nextLine();
+        while(index>LIST.size()-1||index<0){
+            System.out.println("不存在,重输");
+            index=sc.nextInt();
+            sc.nextLine();
+        }
+        LIST.remove(index);
+        System.out.println("删除完成");
     }
 
     private static void save(){
@@ -78,10 +117,6 @@ public class Main {
 
         LIST.add(book);
         System.out.println(LIST);
-    }
-
-    private static void delete(Scanner sc){
-
     }
 
     private static void list(){
